@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Template</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cdbootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cdbootstrap/css/cdb.min.css" />
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
+	<script src="/webjars/jquery/3.6.3/jquery.min.js"></script>
+	<script src="/webjars/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/cdb.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<!-- l'entête-->
+
+<body>
+	<header>
+		<!--Banniere-->
+		<div class="container-fluid">
+			<div class="row ">
+
+				<div class="p-3 bg-image" style="
+      background-image: url('https://wallpapercave.com/wp/wp8448698.png');
+      height: 50px;
+      width:100%;
+      text-align: center;">
+
+					<a th:href="@{index}">
+						<img src="https://www.pagesjaunes.fr/media/agc/5a/eb/6e/00/00/25/9e/16/d4/d5/61025aeb6e0000259e16d4d5/61025aeb6e0000259e16d4d6.png"
+							style="height:30px;"> </a>
+					<!--Logo Xpollens dans la banniere-->
+
+
+
+				</div>
+			</div>
+
+
+
+			<!--Fin de banniere-->
+
+			<!-- navbar-->
+			<div class="row ">
+				<nav class="navbar navbar-expand-md bg-dark">
+					<div class="container-fluid">
+						<a class="navbar-brand" th:href="@{index}"><img
+								src="https://pbs.twimg.com/profile_images/1420057272546381829/I_akSDv2_400x400.jpg"
+								style="height:40px;"></a>
+						<!--Logo Xpollens Jaune-->
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+							aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon-border-primary"> <i
+									class="btn-outline-primary bi-card-list"></i></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" th:href="@{index}">Accueil</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Produit</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+										aria-expanded="false">
+										Entreprise
+									</a>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">Qui sommes-nous ?</a></li>
+										<li><a class="dropdown-item" href="#">Partenaires</a></li>
+										<li><a class="dropdown-item" href="#">Chiffres-clés</a></li>
+									</ul>
+								</li>
+
+							</ul>
+
+							<a class="nav-link active" aria-current="page" th:href="@{connection}"><button
+									class="btn btn-outline-primary" type="submit">Connection</button></a>
+
+							<form class="d-flex" role="search">
+
+								<input class="form-control me-2" type="search" placeholder="Recherche"
+									aria-label="Search">
+								<button class="btn btn-outline-primary" type="submit">Recherche</button>
+							</form>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<!--Fin navbar-->
+		</div>
+	</header>
+	<!--Fin de l'entête-->
+	<main>
+		<body>	
+			
+	
+		<!--Contenu-->
+		<section class="container-fluid" style="width:200px; height:200px;" layout:fragment="pageContent">
+		</section>
+
+	</body>
+
+		<!--Fin de Contenu-->
+	</main>
+	<!--Footer-->
+	<footer class="text-center text-lg-start bg-light text-muted my-5">
+
+		<!--
+		<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+			<div class="me-5 d-none d-lg-block">
+				<span>Rejoignez nous sur nos réseaux sociaux :</span>
+			</div>
+			<div>
+				<a href="" class="me-4 text-reset">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+				<a href="" class="me-4 text-reset">
+					<i class="fab fa-twitter"></i>
+				</a>
+				<a href="" class="me-4 text-reset">
+					<i class="fab fa-google"></i>
+				</a>
+				<a href="" class="me-4 text-reset">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a href="" class="me-4 text-reset">
+					<i class="fab fa-linkedin"></i>
+				</a>
+				<a href="" class="me-4 text-reset">
+					<i class="fab fa-github"></i>
+				</a>
+			</div>
+		</section>
+	-->
+
+
+
+
+		<!-- Section: Links  -->
+		<section class="">
+			<div class="container text-center text-md-start mt-5">
+				<!-- Grid row -->
+				<div class="row mt-3">
+					<!-- Grid column -->
+					<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+						<!-- Content -->
+						<h6 class="text-uppercase fw-bold mb-4">
+							<i class="fas fa-gem me-3"></i>Xpollens
+						</h6>
+						<p>
+							La plateforme de Banking-as-a-Service du Groupe BPCE.
+							Le paiement intégré à vos offres et process, conçu pour accélérer votre business.
+						</p>
+					</div>
+					<!-- Grid column -->
+
+					<!-- Grid column -->
+					<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+						<!-- Links -->
+						<h6 class="text-uppercase fw-bold mb-4">
+							Products
+						</h6>
+						<p>
+							<a href="#!" class="text-reset">Angular</a>
+						</p>
+						<p>
+							<a href="#!" class="text-reset">React</a>
+						</p>
+						<p>
+							<a href="#!" class="text-reset">Vue</a>
+						</p>
+					</div>
+					<!-- Grid column -->
+
+					<!-- Grid column -->
+					<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+						<!-- Links -->
+						<h6 class="text-uppercase fw-bold mb-4">
+							Liens Utiles
+						</h6>
+						<p>
+							<a href="#!" class="text-reset">Settings</a>
+						</p>
+						<p>
+							<a href="#!" class="text-reset">Orders</a>
+						</p>
+						<p>
+							<a href="#!" class="text-reset">Help</a>
+						</p>
+					</div>
+					<!-- Grid column -->
+
+					<!-- Grid column -->
+					<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+						<!-- Links -->
+						<h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+						<p><i class="fas fa-home me-3"></i> 110 Av. de France, 75013 Paris</p>
+						<p>
+							<i class="fas fa-envelope me-3"></i>
+							Exemple@xpollens.com
+						</p>
+						<p><i class="fas fa-phone me-3"></i>01 58 40 40 96</p>
+
+					</div>
+					<!-- Grid column -->
+				</div>
+				<!-- Grid row -->
+			</div>
+		</section>
+		<!-- Section: Links  -->
+
+		<!-- Copyright
+		<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+			Powered By Alexandre
+		</div> -->
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+	<!-- Bootstrap core JavaScript-->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Core plugin JavaScript-->
+	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+	<!-- Custom scripts for all pages-->
+	<script src="js/sb-admin-2.min.js"></script>
+
+	<!-- Page level plugins -->
+	<script src="vendor/chart.js/Chart.min.js"></script>
+
+	<!-- Page level custom scripts -->
+	<script src="js/demo/chart-area-demo.js"></script>
+	<script src="js/demo/chart-pie-demo.js"></script>
+	<script src="js/demo/chart-bar-demo.js"></script>
+
+	<!--Fin Footer-->
+</body>
+
+</html>
